@@ -1,6 +1,7 @@
 基于jquery的城市地区地址联动js插件
 
 调用方法：
+```
 $("#selector").hpLinkage({
     url:"/public/js/area.json" ,
     prov:{ selector: ".prov" , defaultvalue: provinceId },
@@ -8,9 +9,9 @@ $("#selector").hpLinkage({
     dist:{ selector: ".dist" , defaultvalue: distId },
     required: false
 });
+```
 
-
-参数说明：
+> 参数说明：
     1、url 联动数据的来源，格式必须为:
         {"area_no":110000,"parent_no":1,"area_name":"北京","area_level":2,"area_info":"北京","subAreas":[]} 此对象的数组，subAreas数组的成员也是为此对象。
     2、prov ：省的选择器 ，defaultvalue：默认选中的值
